@@ -1,7 +1,7 @@
 # sandbox-scenario
 
 Demonstrate inter-process communication libraries on the browser.
-Usage [here](/demo), live demo [here](spldf).
+Usage [here](/demo), live demo [here](https://cdn.rawgit.com/lachrist/sandbox-scenario/992dbad7/demo/index.html).
 
 ```
 node ../bin.js --basedir ./ > bundle.js \
