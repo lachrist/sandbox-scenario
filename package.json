@@ -1,7 +1,7 @@
 {
   "name": "sandbox-scenario",
   "description": "Demonstrate inter-process communication libraries on the browser",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": {
     "name": "Laurent Christophe",
     "email": "lachrist@vub.ac.be"
