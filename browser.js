@@ -3,7 +3,10 @@ var SandboxEditor = require("sandbox-editor");
 var SandboxSpawner = require("sandbox-spawner");
 var ToggleWidget = require("toggle-widget");
 
-const make = (maker, parentid) => (sandbox) => {
+const make = (maker, range, parentid) => (sandbox) => {
+  sandbox.editor = sandbox.editor || {};
+  sandbox.editor.minLines = sandbox.editor.minLines || range[0];
+  sandbox.editor.maxLines = sandbox.editor.maxLines || range[1];
   const div1 = document.createElement("div");
   const h2 = document.createElement("h2");
   const div2 = document.createElement("div");
@@ -28,15 +31,15 @@ const title = (name) => {
 
 window.addEventListener("load", () => {
   ["Spawn", "Children"].forEach(title);
-  const editor = make(SandboxEditor, "hendak-spawn")(SPAWN_SANDBOX);
+  const editor = make(SandboxEditor, [0, Infinity], "hendak-spawn")(SPAWN_SANDBOX);
   const div = document.createElement("span");
   div.style.verticalAlign = "bottom";
   div.style.display = "inline-block";
   div.style.marginLeft = "20px";
   document.getElementById("hendak-spawn").firstChild.appendChild(div);
   const toggle = ToggleWidget(div, {colors: ["green", "red", "white"]});
-  const editors = PARENT_SANDBOXES.map(make(SandboxEditor, "hendak-spawn"));
-  const spawners = CHILD_SANDBOXES.map(make(SandboxSpawner, "hendak-children"));
+  const editors = PARENT_SANDBOXES.map(make(SandboxEditor, [0, Infinity], "hendak-spawn"));
+  const spawners = CHILD_SANDBOXES.map(make(SandboxSpawner, [7, Infinity], "hendak-children"));
   div.addEventListener("toggle", (event) => {
     if (event.toggled) {
       try {
