@@ -1,2 +1,2 @@
 require("./foo.js");
-process.stdout.write("parent2 ");
+module.exports = "parent2 ";

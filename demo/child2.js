@@ -1,2 +1,2 @@
 require("./foo.js");
-process.stdout.write("child2 ");
+postMessage("child2 ");

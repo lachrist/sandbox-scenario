@@ -1,1 +1,1 @@
-process.stdout.write("child1 ");
+postMessage("child1 ");

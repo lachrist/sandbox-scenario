@@ -1,17 +1,18 @@
 {
   "name": "sandbox-scenario",
   "description": "Demonstrate inter-process communication libraries on the browser",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": {
     "name": "Laurent Christophe",
     "email": "lachrist@vub.ac.be"
   },
   "repository": "lachrist/sandbox-scenario",
   "license": "MIT",
+  "main": "main.js",
   "dependencies": {
     "minimist": "^1.2.0",
-    "sandbox-editor": "0.0.11",
-    "sandbox-spawner": "0.0.11",
+    "sandbox-editor": "0.0.12",
+    "sandbox-spawner": "0.0.13",
     "toggle-widget": "0.0.3"
   },
   "keywords": [

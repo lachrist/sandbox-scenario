@@ -1,1 +1,1 @@
-process.stdout.write("foo ");
+postMessage("foo ");
