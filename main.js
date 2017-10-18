@@ -1,12 +1,12 @@
 
 const Path = require("path");
 const Browserify = require("browserify");
-const Sandbox = require("sandbox-editor/sandbox");
+const Bundle = require("sandbox-editor/bundle");
 
 const box = (context, callback) => {
-  if (!Sandbox[context.type])
+  if (!Bundle[context.type])
     return callback(new Error("Unkown type: "+context.type));
-  Sandbox[context.type](context.path, context.options, callback)
+  Bundle[context.type](context.path, context.options, callback)
 };
 
 const boxall = (contexts, callback) => {
