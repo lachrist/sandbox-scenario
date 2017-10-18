@@ -64,7 +64,7 @@ const make = (maker, parentid) => (sandbox) => {
   const div2 = document.createElement("div");
   div1.appendChild(h2);
   div1.appendChild(div2);
-  h2.textContent = sandbox.path+" ["+sandbox.type+"]";
+  h2.textContent = sandbox.path+(sandbox.type!=="raw"?" ["+sandbox.type+"]":"");
   document.getElementById(parentid).appendChild(div1);
   return maker(div2, sandbox);
 };
