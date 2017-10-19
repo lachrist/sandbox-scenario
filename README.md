@@ -1,7 +1,7 @@
 # sandbox-scenario
 
 Demonstrate inter-process communication libraries on the browser.
-Usage [here](/demo), live demo [here](https://cdn.rawgit.com/lachrist/sandbox-scenario/d1ec33b6/demo/index.html).
+Usage [here](/demo), live demo [here](https://cdn.rawgit.com/lachrist/sandbox-scenario/ae1b6d3c/demo/index.html).
 Command line interface:
 
 ## `Context :: object`
