@@ -1,7 +1,7 @@
 {
   "name": "sandbox-scenario",
-  "description": "Demonstrate inter-process communication libraries on the browser",
-  "version": "0.0.7",
+  "description": "Demonstrate JavaScript projects on the browser",
+  "version": "0.0.8",
   "author": {
     "name": "Laurent Christophe",
     "email": "lachrist@vub.ac.be"
@@ -11,8 +11,8 @@
   "main": "main.js",
   "dependencies": {
     "minimist": "1.2.0",
-    "sandbox-editor": "0.0.16",
-    "sandbox-spawner": "0.0.17",
+    "sandbox-editor": "0.0.17",
+    "sandbox-spawner": "0.0.18",
     "toggle-widget": "0.0.3"
   },
   "keywords": [

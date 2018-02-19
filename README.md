@@ -1,6 +1,6 @@
 # sandbox-scenario
 
-Demonstrate inter-process communication libraries on the browser.
+Demonstrate JavaScriopt projects on the browser.
 Usage [here](/demo), live demo [here](https://cdn.rawgit.com/lachrist/sandbox-scenario/ae1b6d3c/demo/index.html).
 Command line interface:
 
