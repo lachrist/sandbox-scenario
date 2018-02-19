@@ -23,14 +23,18 @@ window.addEventListener("load", () => {
   const div2 = document.createElement("div2");
   div1.style.border = "1px solid black";
   div1.style.borderRadius = "25px";
-  div1.style.marginRight = "5px";
   div1.style.marginBottom = "5px";
-  div1.style.flexGrow = 1;
-  div2.style.flexGrow = 1;
+  div1.style.display = "inline-block";
+  div2.style.display = "inline-block";
+  div1.style.boxSizing = "border-box";
+  div2.style.boxSizing = "border-box";
+  div1.style.verticalAlign = "top";
+  div2.style.verticalAlign = "top";
+  div1.style.width = "49%";
+  div1.style.marginRight = "1%";
+  div2.style.width = "50%";
   ((() => {
-    const div = document.createElement("div3");
-    div.style.flexDirection = "row";
-    div.style.display = "flex";
+    const div = document.createElement("div");
     div.appendChild(div1);
     div.appendChild(div2);
     document.body.appendChild(div);
@@ -39,7 +43,7 @@ window.addEventListener("load", () => {
   span.style.verticalAlign = "bottom";
   span.style.display = "inline-block";
   span.style.verticalAlign = "middle";
-  span.style.marginLeft = "20px";
+  span.style.marginLeft = "10px";
   const editor = ((() => {
     const div = document.createElement("div");
     div1.appendChild(div);
