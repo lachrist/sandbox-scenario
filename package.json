@@ -11,8 +11,8 @@
   "main": "main.js",
   "dependencies": {
     "minimist": "1.2.0",
-    "sandbox-editor": "0.0.17",
-    "sandbox-spawner": "0.0.18",
+    "sandbox-editor": "0.0.18",
+    "sandbox-spawner": "0.0.19",
     "toggle-widget": "0.0.3"
   },
   "keywords": [
