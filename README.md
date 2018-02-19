@@ -1,7 +1,7 @@
 # sandbox-scenario
 
 Demonstrate JavaScriopt projects on the browser.
-Usage [here](/demo), live demo [here](https://cdn.rawgit.com/lachrist/sandbox-scenario/ae1b6d3c/demo/index.html).
+Usage [here](/demo), live demo [here](https://cdn.rawgit.com/lachrist/sandbox-scenario/ea677998/demo/index.html).
 Command line interface:
 
 ## `Context :: object`
