@@ -5,8 +5,10 @@ var ToggleWidget = require("toggle-widget");
 
 const make = (maker, container, sandbox) => {
   container.style.padding = "10px";
-  sandbox.editor = sandbox.editor || {};
-  sandbox.editor.minLines = sandbox.editor.minLines || sandbox.content.split("\n").length;
+  sandbox.editor = Object.assign({
+    minLines: sandbox.content.split("\n").length,
+    maxLines: Infinity
+  }, sandbox.editor);
   const div1 = document.createElement("div");
   const div2 = document.createElement("div");
   div1.style.fontFamily = "monospace";

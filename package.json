@@ -1,7 +1,7 @@
 {
   "name": "sandbox-scenario",
   "description": "Demonstrate JavaScript projects on the browser",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "author": {
     "name": "Laurent Christophe",
     "email": "lachrist@vub.ac.be"
